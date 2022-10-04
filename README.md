@@ -16,7 +16,7 @@ Usage
 -----
 
 ```console
-pyton pptx2txt.py PPT_FILE...
+python pptx2txt.py PPT_FILE...
 ```
 
 Work with spellchecker
@@ -50,6 +50,12 @@ Then you can call the spellcheck service as :
 curl -H "Content-Type: application/json" -X POST -d '{"text":"我从北京南做高铁到南京南"}' http://127.0.0.1:5000/macbert_correct
 
 curl -H "Content-Type: application/json" -X POST -d '{"text":"我从北京南做高铁到 南京南"}' http://127.0.0.1:5000/rule_correct
+```
+
+Finally, convert pptx to text with spell check:
+
+```console
+python pptx2txt.corrector.py PPT_FILE...
 ```
 
 
